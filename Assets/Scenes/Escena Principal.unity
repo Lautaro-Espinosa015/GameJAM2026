@@ -1183,6 +1183,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 960301480}
   dialogueText: {fileID: 484331366}
   dialogueLines:
+  - Hola
+  - Como estas!?
   - Mondongo
 --- !u!50 &1691886554
 Rigidbody2D:

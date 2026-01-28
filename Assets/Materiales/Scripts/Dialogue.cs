@@ -8,10 +8,24 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
 
+    [Header("Player")]
+    [SerializeField] private Player player;
+
     private float typingTime = 0.05f;
     private bool didDialogueStart;
     private bool isPlayerInRange;
     private int lineIndex;
+
+    private void Awake()
+    {
+        if (player == null)
+
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null) player = p.GetComponent<Player>();
+        }
+
+    }
     void Update()
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.F))
@@ -20,7 +34,15 @@ public class Dialogue : MonoBehaviour
             {
                 StartDialogue();
             }
-            
+            else if (dialogueText.text == dialogueLines[lineIndex])
+            {
+                NextDialogueLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                dialogueText.text = dialogueLines[lineIndex];
+            }
         }
     }
 
@@ -40,7 +62,28 @@ public class Dialogue : MonoBehaviour
         dialoguePanel.SetActive(true);
         dialogueMark.SetActive(true);
         lineIndex = 0;
+        if (player != null)
+        {
+            player.DisableMovement();
+        }
+
         StartCoroutine(ShowLine());
+    }
+    private void NextDialogueLine()
+    {
+        lineIndex++;
+        if(lineIndex < dialogueLines.Length)
+        {
+            StartCoroutine(ShowLine());
+        }
+        else
+        {
+            didDialogueStart = false;
+            dialoguePanel.SetActive(false);
+            if (player != null) player.EnableMovement();
+            dialogueMark.SetActive(isPlayerInRange);
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
