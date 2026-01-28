@@ -18,7 +18,7 @@ MonoBehaviour:
     - texto: holi
       siguienteLinea: 1
       efecto: 
-    - texto: mondongo
+    - texto: "mondongo pero un poquito m\xE1s complejo aprovechando el autosize"
       siguienteLinea: -1
       efecto: 
   - texto: Siguiente Linea
