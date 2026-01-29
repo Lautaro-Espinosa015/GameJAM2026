@@ -18,7 +18,8 @@ MonoBehaviour:
     - texto: holi
       siguienteLinea: 1
       efecto: 
-    - texto: "mondongo pero un poquito m\xE1s complejo aprovechando el autosize"
+    - texto: "Esta es una pregunta un poco m\xE1s compleja que he dise\xF1ado para
+        poner a prueba el autosize"
       siguienteLinea: -1
       efecto: 
   - texto: Siguiente Linea
