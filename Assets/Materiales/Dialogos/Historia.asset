@@ -89,7 +89,8 @@ MonoBehaviour:
   - texto: "Detective Vargas: Entiendo porque has tenido sospechas, ser\xE1 mejor
       entrar pronto en acci\xF3n."
     opciones: []
-  - texto: 'Tesa: Muchas gracias.'
+  - texto: "Tesa: Muchas gracias.\nDetective Vargas: Ir\xE9 a hacer el informe en
+      mi computadora"
     opciones:
     - texto: Tesa miente
       siguienteLinea: -1
@@ -125,7 +126,8 @@ MonoBehaviour:
   - texto: "Detective Vargas: Entiendo porque has tenido sospechas, ser\xE1 mejor
       entrar pronto en acci\xF3n.\r\n"
     opciones: []
-  - texto: 'Tesa: Muchas gracias.'
+  - texto: "Tesa: Muchas gracias.\nDetective Vargas: Ir\xE9 a hacer el informe en
+      mi computadora"
     opciones:
     - texto: Tesa miente
       siguienteLinea: -1
