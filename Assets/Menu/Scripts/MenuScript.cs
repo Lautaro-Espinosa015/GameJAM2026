@@ -6,7 +6,7 @@ public class MenuScript : MonoBehaviour
 {
     public void Jugar ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        SceneManager.LoadScene(1);
     }
 
     public void Salir()

@@ -10,7 +10,7 @@ public class Camara : MonoBehaviour
     {
         // Adonde el personaje esta llendo
         // dirección que usa la X y la Y del personaje distancia Z
-        Vector3 destino = new Vector3(elPersonaje.position.x, elPersonaje.position.y, distanciaZ);
+        Vector3 destino = new Vector3(elPersonaje.position.x, elPersonaje.position.y+100, distanciaZ);
 
         // 2. Movemos la cámara desde donde está hacia el "destino" poco a poco
         transform.position = Vector3.Lerp(transform.position, destino, suavizado * Time.deltaTime);
