@@ -10,17 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8c60266f1d187548ae6cf016e995719, type: 3}
-  m_Name: Test
+  m_Name: NPC 2
   m_EditorClassIdentifier: 
   lines:
-  - texto: hola
-    opciones:
-    - texto: holi
-      siguienteLinea: 1
-      efecto: 
-    - texto: "Esta es una pregunta un poco m\xE1s compleja que he dise\xF1ado para
-        poner a prueba el autosize"
-      siguienteLinea: -1
-      efecto: 
-  - texto: Siguiente Linea
+  - texto: "Buenas Vargas, \xBFC\xF3mo est\xE1?"
+    opciones: []
+  - texto: "Los archivos que pidi\xF3 est\xE1n en procesamiento, aunque, queda la
+      autorizaci\xF3n de los superiores.\r\n"
     opciones: []
