@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c60266f1d187548ae6cf016e995719, type: 3}
+  m_Name: Historia
+  m_EditorClassIdentifier: 
+  lines:
+  - texto: "Detective Vargas: (Entra a la sala y deja corriendo la grabadora de la
+      mesa) Gracias por esperar, Tessa. S\xE9 que no es el lugar donde uno quiere
+      pasar un martes por la noche.\r\n\r\n"
+    opciones: []
+  - texto: "\u2026: (Sin levantar la vista, desinteresada) \xBFPodemos ir al punto?
+      Tengo cosas que hacer.\r\n\r\n"
+    opciones: []
+  - texto: "Detective Vargas: Muy bien, se\xF1orita, \xBFme podr\xEDa decir su nombre?\r\n\r\n"
+    opciones: []
+  - texto: 'Tessa: Tessa Doe
+
+'
+    opciones: []
+  - texto: "Detective Vargas: (Se sienta despacio) Repasemos tu declaraci\xF3n. Dices
+      que tu pareja, Rodrigo, te ha estado siguiendo al trabajo, que hacke\xF3 tus
+      correos y que ayer intent\xF3 entrar en tu casa a la fuerza.\r\n\r\n"
+    opciones: []
+  - texto: "Tesa Joe: (Bosteza levemente) Eso es correcto. Es un psic\xF3pata, no
+      me deja vivir. "
+    opciones: []
+  - texto: "Detective Vargas: (Se acomoda en la silla) Tengo toda la noche se\xF1orita,
+      va a tener que darme todos los detalles desde que comenz\xF3. "
+    opciones: []
+  - texto: "Tessa Joe: (Se apoya en la mesa, acerc\xE1ndose un poco a Vargas) Empez\xF3
+      hace seis meses. En una biblioteca, la del centro. \xC9l estaba buscando un
+      libro de arquitectura francesa, algo muy espec\xEDfico que no encontraba. "
+    opciones: []
+  - texto: "Tessa Joe: Yo lo ten\xEDa en mis manos. Se lo ofrec\xED y... bueno, se
+      qued\xF3 prendado. Se llama Rodrigo. Rodrigo \xC1lvarez."
+    opciones: []
+  - texto: "Detective Vargas: (Anotando el nombre) Rodrigo \xC1lvarez. \xBFY \xE9l
+      se acerc\xF3 a ti o t\xFA a \xE9l? "
+    opciones: []
+  - texto: "Tesa: \xC9l a m\xED, por supuesto. Estaba desesperado por ese libro.
+      Me pidi\xF3 el n\xFAmero para \"agradec\xE9rselo\" con un caf\xE9. Al principio
+      era encantador. Me enviaba flores a la oficina todos los d\xEDas a las 9:00
+      AM exactas. Era... atento. "
+    opciones: []
+  - texto: "Detective Vargas: Contin\xFAa, \xBFcu\xE1ndo se volvi\xF3 \"un psic\xF3pata\"? "
+    opciones: []
+  - texto: "Tesa: Cuando intent\xE9 poner l\xEDmites. Empez\xF3 a aparecer en mi
+      gimnasio. Dice que fue coincidencia, pero se inscribi\xF3 justo en mi clase
+      de las 6:00 PM. Es\u2026 asqueroso, \xBFno? Quiere meterse bajo mi piel. "
+    opciones:
+    - texto: (Seguir la corriente)
+      siguienteLinea: 13
+      efecto: 
+    - texto: (Enfrentarla)
+      siguienteLinea: 20
+      efecto: 
+  - texto: "Detective Vargas: \xBFCu\xE1nto tiempo ha estado comport\xE1ndose as\xED?"
+    opciones: []
+  - texto: "Tesa: Aproximadamente 6 o 7 meses nos hab\xEDamos visto en alguna que
+      otra ocasi\xF3n o coincidido en alguna fiesta. Pero not\xE9 muy tarde que no
+      se despegaba de mi.\r\n"
+    opciones: []
+  - texto: "Tesa: Prontamente lo tuve encima en la universidad, biblioteca, aparec\xEDa
+      en reuniones de amigos. Tras ver sus redes sociales he visto que me ha echado
+      el ojo desde hace bastante."
+    opciones:
+    - texto: '(Seguir la corriente)
+
+'
+      siguienteLinea: 17
+      efecto: 
+    - texto: (Enfrentar)
+      siguienteLinea: 23
+      efecto: 
+  - texto: "Detective Vargas: \xBFQu\xE9 sucedi\xF3 para llegar al incidente reciente?"
+    opciones: []
+  - texto: "Tesa: Ver\xE1s ayer tuvimos una discusi\xF3n porque lo he encontrado
+      likeando a cualquiera en redes sociales y me disgust\xF3. "
+    opciones: []
+  - texto: "Detective Vargas: Entiendo porque has tenido sospechas, ser\xE1 mejor
+      entrar pronto en acci\xF3n."
+    opciones: []
+  - texto: 'Tesa: Muchas gracias.'
+    opciones:
+    - texto: Tesa miente
+      siguienteLinea: -1
+      efecto: 
+    - texto: Apoyar a Tesa
+      siguienteLinea: -1
+      efecto: 
+  - texto: "Detective Vargas: Hace un momento dijiste que \xE9l hackeo tus correos
+      electr\xF3nicos para saber d\xF3nde estabas, pero si ya sabia que ibas al gimnasio
+      a las 6:00, ya que va a tu misma clase, porque necesitar\xEDa hackearte?"
+    opciones: []
+  - texto: "Tesa: Pues piensa que \xE9l querr\xEDa saber que hablo de \xE9l a \u201Csus
+      espaldas\u201D con mis amigas.\r\n"
+    opciones: []
+  - texto: "Tesa: Lo conoc\xED hace bastante poco, pero viendo sus redes sociales
+      parece que \xE9l me ha estado echando el ojo desde hace mucho. Ewww\r\n"
+    opciones:
+    - texto: '(Seguir la corriente)
+
+'
+      siguienteLinea: 17
+      efecto: 
+    - texto: '(Enfrentar)
+
+'
+      siguienteLinea: 23
+      efecto: 
+  - texto: "Detective Vargas: \xBFPorque has decidido ver sus redes sociales?"
+    opciones: []
+  - texto: "Tesa: Porque me daba curiosidad saber qu\xE9 era lo que sub\xEDa, adem\xE1s,
+      eso es importante?\r\n"
+    opciones: []
+  - texto: "Detective Vargas: Entiendo porque has tenido sospechas, ser\xE1 mejor
+      entrar pronto en acci\xF3n.\r\n"
+    opciones: []
+  - texto: 'Tesa: Muchas gracias.'
+    opciones:
+    - texto: Tesa miente
+      siguienteLinea: -1
+      efecto: 
+    - texto: Apoyar a Tesa
+      siguienteLinea: -1
+      efecto: 
