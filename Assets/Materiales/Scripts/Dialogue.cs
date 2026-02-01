@@ -28,6 +28,7 @@ public class Dialogue : MonoBehaviour
     private bool isPlayerInRange;
     private bool esperandoOpcion = false;
     private int lineIndex;
+    private AudioSource footstepAudio;
 
     private void Awake()
     {
@@ -36,7 +37,7 @@ public class Dialogue : MonoBehaviour
             GameObject p = GameObject.FindGameObjectWithTag("Player");
             if (p != null) player = p.GetComponent<Player>();
         }
-
+        footstepAudio = GetComponent<AudioSource>();
         // Seguridad: ocultar panel y opciones al iniciar
         if (dialoguePanel != null) dialoguePanel.SetActive(false);
         if (optionsContainer != null) optionsContainer.gameObject.SetActive(false);
@@ -297,6 +298,7 @@ public class Dialogue : MonoBehaviour
             isPlayerInRange = true;
             if (!didDialogueStart && dialogueMark != null) dialogueMark.SetActive(true);
             Debug.Log("Se puede hablar");
+            footstepAudio.Play();
         }
     }
 
@@ -307,6 +309,7 @@ public class Dialogue : MonoBehaviour
             isPlayerInRange = false;
             if (dialogueMark != null) dialogueMark.SetActive(false);
             Debug.Log("No se puede hablar");
+
 
             // Si el jugador se va en medio del diálogo, lo cerramos
             if (didDialogueStart) EndDialogue();
