@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c60266f1d187548ae6cf016e995719, type: 3}
+  m_Name: Historia2
+  m_EditorClassIdentifier: 
+  lines:
+  - texto: "Detective Vargas: (El detective se acerca para recibirlo) Buenas tardes,
+      Se\xF1or \xC1lvarez, soy el detective Vargas y estoy encargado de su caso.\r\n"
+    opciones: []
+  - texto: "Rodrigo \xC1lvarez: (El hace solo un cabeceo) Buenas tardes, detective.
+      Me dijeron que deb\xEDa hablar con usted para el interrogatorio.\r\n\r\n"
+    opciones: []
+  - texto: 'Detective Vargas: Si, eso es correcto. Por favor, tome asiento.
+
+      (El
+      Acusado toma asiento en la mesa, y el detective lo sigue.)
+
+'
+    opciones: []
+  - texto: "Detective Vargas: Muy bien se\xF1or \xC1lvarez necesito que me cuente
+      c\xF3mo conoci\xF3 a la se\xF1orita Doe. Sea conciso, y corto en lo posible.
+      No se salte nada importante.\r\n"
+    opciones: []
+  - texto: "Rodrigo \xC1lvarez: Todo empez\xF3 hace seis meses, fui a la biblioteca
+      a buscar un libro de arquitectura, entonces apareci\xF3 esta chica. Ni siquiera
+      le dije nada, ella s\xF3lo apareci\xF3. Ella me di\xF3 un libro cualquiera,
+      y luego s\xF3lo\u2026 me empez\xF3 a seguir a todos lados."
+    opciones: []
+  - texto: "Detective Vargas: \xBFA qu\xE9 se refiere con eso? \xBFPuede ampliar?\r\n"
+    opciones: []
+  - texto: "Rodrigo \xC1lvarez: Era c\xF3mo, me revisaba las redes sociales. Inicialmente,
+      acept\xE9 salir con ella, pero realmente, se puso tan mal que la iba a dejar.
+      Empec\xE9 el gimnasio, y ella estaba ah\xED. Sal\xEDa con amigos, ella estaba
+      ah\xED. Yo no quise decir nada realmente, ya que no soy problem\xE1tico. Pero\u2026
+      Desde que me hizo la denuncia, sent\xEDa que era correcto venir y declarar.\r\n"
+    opciones:
+    - texto: Creer
+      siguienteLinea: 7
+      efecto: 
+    - texto: No creer
+      siguienteLinea: 11
+      efecto: 
+  - texto: "Detective Vargas: Muy bien se\xF1or \xC1lvarez, entonces, \xBFusted afirma
+      que la se\xF1orita Doe lo ha acosado a usted?"
+    opciones: []
+  - texto: "Rodrigo \xC1lvarez: No solo lo afirmo, tengo pruebas. Ella se ha creado
+      cuentas aparte para poder espiarme. Adem\xE1s de que, ella ha entrado m\xFAltiples
+      veces a mi casa sin autorizaci\xF3n.\r\n"
+    opciones: []
+  - texto: "(El detective toma notas, viendo las fotos que le ha mostrado el acusado)\r\nDetective
+      Vargas: Muy bien se\xF1or, se va a quedar aqu\xED a llenar papeleo, no se preocupe.
+      Veremos su caso.\r\n"
+    opciones: []
+  - texto: "Rodrigo \xC1lvarez: Le agradezco su tiempo, detective.\r\nDetective Vargas:
+      (Ya tengo la informacion suficiente, en la computadora llegar\xE9 al final
+      de esto...)"
+    opciones:
+    - texto: creer
+      siguienteLinea: -1
+      efecto: 
+    - texto: no creer
+      siguienteLinea: -1
+      efecto: 
+  - texto: "Detective Vargas: Muy bien se\xF1or \xC1lvarez, entonces, \xBFusted afirma
+      que la se\xF1orita Doe lo ha acosado a usted?\r\n"
+    opciones: []
+  - texto: "Rodrigo \xC1lvarez: No solo lo afirmo, tengo pruebas. Ella se ha creado
+      cuentas aparte para poder espiarme. Adem\xE1s de que, ella ha entrado m\xFAltiples
+      veces a mi casa sin autorizaci\xF3n\r\n\r\n"
+    opciones: []
+  - texto: "Detective Vargas: Sin embargo, se han presentado muchas pruebas en su
+      contra. Las pocas pruebas que present\xF3, no prueban que usted no acos\xF3
+      a la se\xF1orita Doe.\r\n\r\n\r\n"
+    opciones: []
+  - texto: "Detective Vargas: Muy bien se\xF1or, usted queda bajo observaci\xF3n.
+      Por favor, llene el papeleo y revisar\xE9 su caso.\r\n\r\n\r\n\r\n"
+    opciones: []
+  - texto: "Rodrigo \xC1lvarez: Por favor detective, debe de creerme\u2026\nDetective
+      Vargas: (Ya tengo la informacion suficiente, en la computadora llegar\xE9 al
+      final de esto...)\r\n"
+    opciones:
+    - texto: creer
+      siguienteLinea: -1
+      efecto: 
+    - texto: no creer
+      siguienteLinea: -1
+      efecto: 
