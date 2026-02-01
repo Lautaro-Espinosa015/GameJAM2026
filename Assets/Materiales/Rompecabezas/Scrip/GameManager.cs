@@ -1,5 +1,6 @@
-using UnityEngine;
 using TMPro; // Solo si usas TextMeshPro
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
             {
                 menuGanar.SetActive(true);
                 Debug.Log("¡Juego completado! Activando menú.");
+                SceneManager.LoadScene(3);
             }
             else
             {
